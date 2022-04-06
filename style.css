@@ -1,0 +1,43 @@
+html {
+    height:100%;
+}
+body {
+    background:linear-gradient(25deg, #4B4E53, #000000);
+    color: #ebeded;
+    text-align:center;
+    padding:10vw;
+}
+/*my original button*/
+#isubmit {
+    text-align:center;
+    margin-top:0.8em;
+    padding-top:0.5em;
+    padding-left:5vw;
+    padding-right:5vw;
+    padding-bottom:0.5em;
+    font-size:1em;
+    border-radius:0.5em;
+    background-color:blue;
+    background-image: linear-gradient(#42A1EC, #0070C9);
+    border:transparent;
+    color:#ebeded;
+}
+#isubmit:disabled {
+    cursor: default;
+    opacity: .3;
+}
+#isubmit:hover {
+    background-image: linear-gradient(#51A9EE, #147BCD);
+    border-color: #1482D0;
+    text-decoration: none;
+}
+#isubmit:active {
+    background-image: linear-gradient(#3D94D9, #0067B9);
+    outline: none;
+}
+#isubmit:focus {
+    outline: none;
+}
+p {
+    font-size:1em;
+}
