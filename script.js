@@ -2,12 +2,8 @@ function dataCheck() {
     event.preventDefault();
     var x=document.getElementById("itext").value;
     /*this is used for the first main test
-    of the string obtained by the input.
-    Please note that this regex only accepts
-    a specific date format: dd/mm/yyyy.
-    A more complex regex is required to accept
-    other formats like dd-mm-yy or dd.mm.yyyy*/
-    var isDate = /^(((0[1-9]|[12]\d|3[01])\/(0[13578]|1[02])\/((19|[2-9]\d)\d{2}))|((0[1-9]|[12]\d|30)\/(0[13456789]|1[012])\/((19|[2-9]\d)\d{2}))|((0[1-9]|1\d|2[0-8])\/02\/((19|[2-9]\d)\d{2}))|(29\/02\/((1[6-9]|[2-9]\d)(0[48]|[2468][048]|[13579][26])|(([1][26]|[2468][048]|[3579][26])00))))$/g;
+    of the string obtained by the input.*/
+    var isDate = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
     //log used during development    
     //console.log("É número = " + /^-?\d+(?:\.\d+)?$/.test(x));
     
