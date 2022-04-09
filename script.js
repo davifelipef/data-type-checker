@@ -21,8 +21,9 @@ document.getElementById("result").style.opacity="100";
        /*if is not a date or a number, check if
        it is a boolean value*/
        } else {
-           if (/^[true|false]+$/i.test(x) == true) { document.getElementById("result").innerHTML="Boolean";
-document.getElementById("result").style.opacity="100";
+           if (x.toUpperCase() == "TRUE"||x.toUpperCase() == "FALSE"){ 
+              document.getElementById("result").innerHTML="Boolean";
+              document.getElementById("result").style.opacity="100";
        /*if is not a date, a number or a 
        boolean value, checks if the text 
        field it's empty*/
