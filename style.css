@@ -16,6 +16,9 @@ body {
 p {
     font-size:1.1em;
 }
+#itext {
+    font-size: 1.1em;
+}
 /*my original button*/
 #isubmit {
     text-align:center;
